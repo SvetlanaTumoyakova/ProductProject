@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnlineStore.Model;
-using OnlineStore.Repositories.Interfaces;
+using ProductProjectAPI.Model;
+using ProductProjectAPI.Repositories.Interfaces;
 
-namespace OnlineStore.Controllers
+namespace ProductProjectAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

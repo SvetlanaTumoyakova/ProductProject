@@ -1,12 +1,12 @@
+using OnlineStore.Repositories;
+using ProductProjectAPI.Repositories.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddControllers();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
 
